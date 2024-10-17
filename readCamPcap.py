@@ -1,4 +1,4 @@
-from fields.Etsi_Its_Msgs import *
+from src.scapy_etsi_its.Etsi_Its_Msgs import *
 
 
 def show_cits_cam_messages(pcap_file_path):

@@ -1,0 +1,21 @@
+[project]
+name = "scapy_etsi_its"
+description = "Scapy layers for dissecting and crafting ETSI C-ITS packets "
+
+readme = "README.md"
+requires-python = ">= 3.9"
+
+dependencies = [
+    "pycrate>=0.7.7",
+    "scapy>=2.6.0"
+]
+
+dynamic = ["version"]
+
+
+[tool.setuptools.dynamic]
+version.attr = "scapy_etsi_its.__version__"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
